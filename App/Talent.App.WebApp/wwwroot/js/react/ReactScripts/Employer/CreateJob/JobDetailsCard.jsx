@@ -48,7 +48,7 @@ export class JobDetailsCard extends React.Component {
         var updateData = {
             target: { name: "jobDetails", value: data }
         }
-
+        
         this.props.updateStateData(updateData);
     }
 

@@ -105,6 +105,7 @@ export default class CreateJob extends React.Component {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'
             },
+        
             dataType:'json',
             type: "post",
             data: JSON.stringify(jobData),
@@ -197,7 +198,8 @@ export default class CreateJob extends React.Component {
                                                     <JobDetailsCard
                                                         expiryDate={this.state.jobData.expiryDate}
                                                         jobDetails={this.state.jobData.jobDetails}
-                                                        updateStateData={this.updateStateData}
+                                                        up
+                                                        StateData={this.updateStateData}
                                                         createClick={this.addUpdateJob}
                                                     />
                                                 </div>
